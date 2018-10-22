@@ -1,0 +1,15 @@
+{
+  "name": "test_chat_back",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Michael Zakharov",
+  "license": "MIT",
+  "scripts":  {
+    "start":  "nodemon server",
+    "clear": "lsof -i TCP:8081 | grep LISTEN | awk '{print $2}' | xargs kill -9"
+  },
+  "dependencies": {
+    "nodemon": "^1.18.4",
+    "ws": "^6.1.0"
+  }
+}
